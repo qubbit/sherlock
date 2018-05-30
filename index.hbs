@@ -1,9 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <title>{{@blog.title}}</title>
-</head>
-<body>
+{{!< default}}
 {{#foreach posts}}
 <article class="{{post_class}}">
   <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
@@ -13,5 +8,3 @@
   <p>{{excerpt words="50"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
 </article>
 {{/foreach}}
-</body>
-</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{lang}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    {{ghost_head}}
+  </head>
+  <body class="site {{body_class}}">
+    <header></header>
+    <main class="site-wrapper">
+      {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+      {{{body}}}
+    </main>
+    <footer class="site-footer outer">
+      <div class="site-footer-content inner">
+        <div class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</div>
+      </div>
+    </footer>
+    {{{block "scripts"}}}
+    {{ghost_foot}}
+  </body>
+</html>

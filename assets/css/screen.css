@@ -1,0 +1,37 @@
+/* color palette: https://coolors.co/ed3d34-75c3c6-fff8e6-112537-0e1d2b */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+  --primary-color: #ed3d34;
+  --secondary-color: #75c3c6;
+  --tertiary-color: #112537;
+  --main-bg-color: #fff8e6;
+  --text-color: #0e1d2b;
+}
+
+a, h1, h2, h3, h4 {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Avenir Next', 'Avenir', 'Lato', sans-serif;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.site-wrapper {
+  flex: 1;
+}
+
+footer {
+  margin-bottom: 30px;
+}
