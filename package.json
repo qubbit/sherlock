@@ -1,0 +1,15 @@
+{
+  "name": "sherlock",
+  "description": "A dark theme for Ghost",
+  "version": "0.1.0",
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "nullgeo@gmail.com"
+  },
+  "config": {
+    "posts_per_page": 10
+  }
+}
