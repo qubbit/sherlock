@@ -6,12 +6,16 @@
   --primary-color: #ed3d34;
   --secondary-color: #75c3c6;
   --tertiary-color: #112537;
-  --main-bg-color: #fff8e6;
+  --main-bg-color: #ffffff;
   --text-color: #0e1d2b;
 }
 
 a, h1, h2, h3, h4 {
   color: var(--primary-color);
+}
+
+tt, code, kbd, samp {
+  font-family: 'SF Mono', 'Consolas', sans-serif;
 }
 
 body {
@@ -33,5 +37,6 @@ body {
 }
 
 footer {
+  margin-top: 50px;
   margin-bottom: 30px;
 }

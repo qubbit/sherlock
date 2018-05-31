@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
     <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +22,15 @@
       </div>
     </footer>
     {{{block "scripts"}}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+    addEventListener('load', function(){
+      var code = document.querySelectorAll('pre code');
+      code.forEach(function(block) {
+        hljs.highlightBlock(block);
+      });
+    });
+    </script>
     {{ghost_foot}}
   </body>
 </html>
