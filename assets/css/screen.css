@@ -1,4 +1,4 @@
-/* color palette: https://coolors.co/ed3d34-75c3c6-fff8e6-112537-0e1d2b */
+/* color palette: https://coolors.co/ed3d34-75c3c6-f8f5f2-112537-0e1d2b */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
@@ -6,7 +6,7 @@
   --primary-color: #ed3d34;
   --secondary-color: #75c3c6;
   --tertiary-color: #112537;
-  --main-bg-color: #ffffff;
+  --main-bg-color: #f8f5f2;
   --text-color: #0e1d2b;
 }
 
@@ -14,12 +14,19 @@ a, h1, h2, h3, h4 {
   color: var(--primary-color);
 }
 
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 tt, code, kbd, samp {
   font-family: 'SF Mono', 'Consolas', sans-serif;
 }
 
 blockquote {
-  border-left: 5px solid hsla(0, 84%, 66%, 1);
+  border-left: 5px solid color(var(--primary-color) shade(25%));
   padding-left: 10px;
   margin-left: 0;
 }
@@ -40,6 +47,8 @@ body {
 
 .site-wrapper {
   flex: 1;
+  background: #fff;
+  padding: 100px;
 }
 
 footer {
