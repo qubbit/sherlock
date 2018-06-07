@@ -11,7 +11,7 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 tt, code, kbd, samp {
-  font-family: 'SF Mono', 'Consolas', sans-serif; }
+  font-family: 'SF Mono', 'Consolas', monospace; }
 
 blockquote {
   border-left: 5px solid #80002b;
@@ -63,5 +63,18 @@ footer {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px; }
+
+@media all and (max-width: 640px) {
+  .site {
+    width: 100%; }
+
+  .site-wrapper {
+    padding: 10px; } }
+@media all and (max-width: 768px) {
+  .site {
+    width: 100%; }
+
+  .site-wrapper {
+    padding: 30px; } }
 
 /*# sourceMappingURL=screen.css.map */
