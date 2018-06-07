@@ -1,57 +1,67 @@
-/* color palette: https://coolors.co/ed3d34-75c3c6-f8f5f2-112537-0e1d2b */
-
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-:root {
-  --primary-color: #ed3d34;
-  --secondary-color: #75c3c6;
-  --tertiary-color: #112537;
-  --main-bg-color: #f8f5f2;
-  --text-color: #0e1d2b;
-}
-
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 a, h1, h2, h3, h4 {
-  color: var(--primary-color);
-}
+  color: #903;
+  font-family: 'IM Fell Great Primer', serif; }
 
 hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 tt, code, kbd, samp {
-  font-family: 'SF Mono', 'Consolas', sans-serif;
-}
+  font-family: 'SF Mono', 'Consolas', sans-serif; }
 
 blockquote {
-  border-left: 5px solid color(var(--primary-color) shade(25%));
+  border-left: 5px solid #80002b;
   padding-left: 10px;
-  margin-left: 0;
-}
+  margin-left: 0; }
+
+mark {
+  background: #ff8ab1; }
+
+img {
+  max-width: 100%; }
 
 body {
-  font-family: 'Avenir Next', 'Avenir', 'Lato', sans-serif;
-  background: var(--main-bg-color);
-  color: var(--text-color);
-}
+  font-family: 'Libre Baskerville', 'Avenir Next', 'Avenir', 'Lato', sans-serif;
+  background: #f8f5f2;
+  color: #0e1d2b; }
 
 .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   width: 60%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
+.site-title {
+  text-align: center;
+  font-style: italic; }
 
 .site-wrapper {
   flex: 1;
   background: #fff;
-  padding: 100px;
-}
+  padding: 30px 100px;
+  box-shadow: 0px 0 7px -1px #a5a1a1; }
+
+.post-content .kg-card-markdown > p:first-child:first-letter {
+  font-size: 48px;
+  color: #903;
+  float: left;
+  line-height: 60px;
+  padding-right: 3px; }
+
+.post-content .kg-card-markdown > p:nth-child(2) {
+  clear: both; }
+
+.post-content p {
+  line-height: 32px; }
 
 footer {
+  text-align: center;
   margin-top: 50px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=screen.css.map */
