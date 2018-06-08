@@ -79,6 +79,8 @@ header {
 
 .post-template main.site-wrapper {
   padding: 40px 0; }
+  .post-template main.site-wrapper .post-feature-image {
+    margin-bottom: 40px; }
   .post-template main.site-wrapper:after {
     content: "❧";
     text-align: center;
@@ -86,7 +88,7 @@ header {
     color: #903;
     font-size: 32px; }
   .post-template main.site-wrapper article {
-    padding: 40px 100px 100px 100px; }
+    padding: 0 100px 100px 100px; }
 
 .post-meta span + span:before {
   content: " \00d7 ";
