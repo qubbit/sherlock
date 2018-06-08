@@ -13,7 +13,8 @@
   <body class="site {{body_class}}">
     <main class="site-wrapper">
       <header>
-        <h1 class="site-title">{{@blog.title}}</h1>
+        <a href="{{@blog.url}}"><h1 class="site-title">{{@blog.title}}</h1></a>
+        <small class="site-description">{{@blog.description}}</small>
       </header>
       {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
       {{{body}}}
