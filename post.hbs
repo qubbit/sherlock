@@ -7,18 +7,20 @@
     <h1 class="post-title">{{title}}</h1>
     <div class="post-meta">
       <span class="post-author">Written by
-      {{#primary_author}}
+      {{#author}}
         <a href="{{url}}">{{name}}</a>
-      {{/primary_author}}
+      {{/author}}
       </span>
       <span class="post-date-container"> on
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
           {{date format="DD MMMM YYYY"}}
         </time>
       </span>
+      {{#tags}}
       <span class="post-tags">
       {{tags prefix=" in "}}
       </span>
+      {{/tags}}
     </div>
   </header>
   <div class="post-content">
